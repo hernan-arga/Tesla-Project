@@ -467,8 +467,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hola, aca
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f26ed6d63e9085c4ebc09a9028e48b08, type: 2}
-  m_sharedMaterial: {fileID: -6941770741357090340, guid: f26ed6d63e9085c4ebc09a9028e48b08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cc3d2e7dd03ed040b7bc855bda5aecb, type: 2}
+  m_sharedMaterial: {fileID: 9206609272822217196, guid: 7cc3d2e7dd03ed040b7bc855bda5aecb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -589,7 +589,7 @@ MonoBehaviour:
   Dialogue:
     SentenceList:
     - speakerName: Tesla
-      message: Quiero ir a hacer <w>caca</w> Sr. Edison
+      message: "Quiero ir a hacer <w>caca</w> Sr. Edison \xF1"
       SpeakSound: {fileID: 8300000, guid: 9f3380cfcf33615468b712b95532cdf5, type: 3}
       TypingSpeed: 0.1
       EventosADisparar:
