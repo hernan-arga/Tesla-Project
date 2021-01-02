@@ -22,20 +22,21 @@ public class Tesla : MonoBehaviour
     void FixedUpdate()
     {
         if (active)
-        {        
-            if(Input.GetKey(KeyCode.D))
+        {
+            move = Input.GetAxisRaw("Horizontal");
+
+            if (Input.GetKey(KeyCode.D))
             {
                 estaCaminando = true;
-                transform.localScale = new Vector3(1f, 1f, 1f);
+                transform.localScale = new Vector3(move, 1f, 1f);
 
             }
             else if(Input.GetKey(KeyCode.A))
             {
                 estaCaminando = true;
-                transform.localScale = new Vector3(-1f, 1f, 1f);
+                transform.localScale = new Vector3(move, 1f, 1f);
             }
-
-            move = Input.GetAxisRaw("Horizontal");
+            
             rigidBody.velocity = new Vector3(speed * move, rigidBody.velocity.y, rigidBody.velocity.z);
 
             if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
