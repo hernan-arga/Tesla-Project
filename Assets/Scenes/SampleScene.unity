@@ -784,8 +784,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[0].message
-      value: "Hola, este es un texto <w>wavy</w> Sr. Edison. Vamos a probar el <s>Shaky</s>.
-        Nada mal, veamos el <c>rainbow effect</c>. \xA1\xA1Increible!!"
+      value: "Hola, este es un texto <w>wavy</w> y este uno <s>Shaky</s>. Admira
+        este <c>rainbow effect</c>. \xA1\xA1Increible!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].message
+      value: "\xBFMe ayuda Sr. <s>Edison</s>?"
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[3].message

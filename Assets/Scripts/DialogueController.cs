@@ -17,6 +17,7 @@ public class DialogueController : MonoBehaviour
 	AudioSource MyAudio;
 	//public GameController GameController;
 	bool typingText;
+	private string activeMessage = "";
 	private bool inTag = false;
 	private TextEffect activeEffect = TextEffect.None;
 	private int countOfCharsOfTags = 0;
@@ -60,10 +61,11 @@ public class DialogueController : MonoBehaviour
 
 	void DisplayNextSentence()
 	{
+		activeMessage = "";
+
 		if (Sentences.Count <= 0)
 		{
 			StopTypingText();
-			//GameController.EstadoDeEscena = Dialogue.EstadoDeEscenaAlQueCambiar;
 			DialoguePanel.SetActive(false);
 			Destroy(gameObject);
 			return;
@@ -74,6 +76,8 @@ public class DialogueController : MonoBehaviour
 		StopTypingText();
 		SpeakerName.text = ActiveSentence.speakerName;
 		Portrait.sprite = ActiveSentence.Portrait;
+		ParseMessage(ActiveSentence);
+		countOfCharsOfTags = 0;
 		CoroutineTypeText = TypeTheSentence(ActiveSentence);
 		StartCoroutine(CoroutineTypeText);
 	}
@@ -82,33 +86,14 @@ public class DialogueController : MonoBehaviour
 	{
 		DisplayText.text = "";        
 
-		for (int i = 0; i < activeSentence.message.Length; i++)
-		{
-			CheckTag(activeSentence.message, activeSentence.message[i], i, ref inTag);
+		for (int i = 0; i < activeMessage.Length; i++)
+		{			
+			DisplayText.text += activeMessage[i];
+			MyAudio.PlayOneShot(activeSentence.SpeakSound);				
 
-            if (inTag)
-            {
-				countOfCharsOfTags++;
-			}
-
-            else
-            {
-				DisplayText.text += activeSentence.message[i];
-				MyAudio.PlayOneShot(activeSentence.SpeakSound);
-
-				if (activeSentence.message[i] == ' ')
-                {
-					effectsByChar.Add(i - countOfCharsOfTags, TextEffect.None);					
-				}
-
-                else
-                {
-					effectsByChar.Add(i - countOfCharsOfTags, activeEffect);
-				}						
-
-				yield return new WaitForSeconds(activeSentence.TypingSpeed);
-				typingText = true;
-			}
+			yield return new WaitForSeconds(activeSentence.TypingSpeed);
+			typingText = true;
+			
 		}
 
 		activeSentence.EventosADisparar.Invoke();
@@ -116,10 +101,40 @@ public class DialogueController : MonoBehaviour
 		typingText = false;
 	}
 
+	void ParseMessage(messageDialog activeSentence)
+	{
+		for (int i = 0; i < activeSentence.message.Length; i++)
+		{
+			CheckTag(activeSentence.message, activeSentence.message[i], i, ref inTag);
+
+			if (inTag)
+			{
+				countOfCharsOfTags++;
+			}
+
+			else
+			{
+				activeMessage += activeSentence.message[i];
+
+				if (activeSentence.message[i] == ' ')
+				{
+					effectsByChar.Add(i - countOfCharsOfTags, TextEffect.None);
+				}
+
+				else
+				{
+					effectsByChar.Add(i - countOfCharsOfTags, activeEffect);
+				}
+
+			}
+		}
+
+	}
+
 	void FinishActiveSentence()
 	{
 		StopCoroutine(CoroutineTypeText);
-		DisplayText.text = ActiveSentence.message;
+		DisplayText.text = activeMessage;
 		ActiveSentence.EventosADisparar.Invoke();
 		typingText = false;
 	}
@@ -134,7 +149,6 @@ public class DialogueController : MonoBehaviour
 
 	protected void CheckTag(string fullText, char c, int j, ref bool inTag)
     {
-
         if (c=='<')
         {
 			inTag = true;
@@ -170,7 +184,7 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-	void Update()
+	void LateUpdate()
 	{
 		DisplayText.ForceMeshUpdate();
 		mesh = DisplayText.mesh;
@@ -180,37 +194,43 @@ public class DialogueController : MonoBehaviour
 
 		foreach (var keyValuePair in effectsByChar)
 		{
-			TMP_CharacterInfo c = DisplayText.textInfo.characterInfo[keyValuePair.Key];
-
-			int index = c.vertexIndex;
-
-			if(keyValuePair.Value.Equals(TextEffect.Color))
+            if (DisplayText.textInfo.characterCount > keyValuePair.Key)
             {
-				colors[index] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index].x * color_velocity, 1f));
-				colors[index + 1] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 1].x * color_velocity, 1f));
-				colors[index + 2] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 2].x * color_velocity, 1f));
-				colors[index + 3] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 3].x * color_velocity, 1f));
-			}
+				TMP_CharacterInfo c = DisplayText.textInfo.characterInfo[keyValuePair.Key];
+
+				int index = c.vertexIndex;
+
+				if(keyValuePair.Value.Equals(TextEffect.Color))
+				{
+					colors[index] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index].x * color_velocity, 1f));
+					colors[index + 1] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 1].x * color_velocity, 1f));
+					colors[index + 2] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 2].x * color_velocity, 1f));
+					colors[index + 3] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 3].x * color_velocity, 1f));
+				}
 			
 
-			Vector3 offset = ApplyEffect(keyValuePair.Key, keyValuePair.Value);
-			vertices[index] += offset;
-			vertices[index + 1] += offset;
-			vertices[index + 2] += offset;
-			vertices[index + 3] += offset;
+				Vector3 offset = ApplyEffect(keyValuePair.Key, keyValuePair.Value);
+				vertices[index] += offset;
+				vertices[index + 1] += offset;
+				vertices[index + 2] += offset;
+				vertices[index + 3] += offset;
 		
 
-			mesh.vertices = vertices;
-			mesh.colors = colors;
-			DisplayText.canvasRenderer.SetMesh(mesh);
+				mesh.vertices = vertices;
+				mesh.colors = colors;
+				DisplayText.canvasRenderer.SetMesh(mesh);
+			}
 		}
+	}
 
+    private void Update()
+    {
 		if (Input.GetKeyDown(KeyCode.J))
-		{			
+		{
 
 			if (typingText)
 			{
-				//FinishActiveSentence();
+				FinishActiveSentence();
 			}
 
 			else
@@ -221,10 +241,9 @@ public class DialogueController : MonoBehaviour
 			}
 
 		}
-
 	}
 
-	Vector2 ApplyEffect(int index, TextEffect effect)
+    Vector2 ApplyEffect(int index, TextEffect effect)
     {
         switch (effect)
         {
