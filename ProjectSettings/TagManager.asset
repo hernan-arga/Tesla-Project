@@ -46,6 +46,6 @@ TagManager:
   - name: Inventory
     uniqueID: 1706845939
     locked: 0
-  - name: Canvas
+  - name: Item
     uniqueID: 3725312281
     locked: 0
