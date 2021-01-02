@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DialogueController : MonoBehaviour
 	public GameObject DialoguePanel;
 	public TextMeshProUGUI DisplayText;
 	public TextMeshProUGUI SpeakerName;
+	public Image Portrait;
 	messageDialog ActiveSentence;
 	AudioSource MyAudio;
 	//public GameController GameController;
@@ -70,7 +72,8 @@ public class DialogueController : MonoBehaviour
 		ActiveSentence = Sentences.Dequeue();
 
 		StopTypingText();
-		//SpeakerName.text = ActiveSentence.speakerName;
+		SpeakerName.text = ActiveSentence.speakerName;
+		Portrait.sprite = ActiveSentence.Portrait;
 		CoroutineTypeText = TypeTheSentence(ActiveSentence);
 		StartCoroutine(CoroutineTypeText);
 	}
@@ -90,10 +93,19 @@ public class DialogueController : MonoBehaviour
 
             else
             {
-				effectsByChar.Add(i-countOfCharsOfTags, activeEffect);
 				DisplayText.text += activeSentence.message[i];
-
 				MyAudio.PlayOneShot(activeSentence.SpeakSound);
+
+				if (activeSentence.message[i] == ' ')
+                {
+					effectsByChar.Add(i - countOfCharsOfTags, TextEffect.None);					
+				}
+
+                else
+                {
+					effectsByChar.Add(i - countOfCharsOfTags, activeEffect);
+				}						
+
 				yield return new WaitForSeconds(activeSentence.TypingSpeed);
 				typingText = true;
 			}
@@ -122,6 +134,7 @@ public class DialogueController : MonoBehaviour
 
 	protected void CheckTag(string fullText, char c, int j, ref bool inTag)
     {
+
         if (c=='<')
         {
 			inTag = true;

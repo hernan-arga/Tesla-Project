@@ -11,6 +11,7 @@ public struct messageDialog
 	public AudioClip SpeakSound;
 	public float TypingSpeed;
 	public UnityEvent EventosADisparar;
+	public Sprite Portrait;
 }
 
 [System.Serializable]
