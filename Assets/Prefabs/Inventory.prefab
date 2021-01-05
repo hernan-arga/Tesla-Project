@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7497493013282836588}
   - component: {fileID: 6286209209190125764}
   m_Layer: 0
-  m_Name: Inventario
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,3 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb5f0e22008d7f4ea54d927ffd65163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSlotContainer: {fileID: 6795949432169516348, guid: e1cf5979c9b7b764987a4fd500c9b257, type: 3}
+  itemSlotCellSizeX: 1.37
+  itemSlotCellSizeY: 1.41
+  originalPositionFirstSlot: {x: 0, y: 0}
+  prefab1: {fileID: 0}

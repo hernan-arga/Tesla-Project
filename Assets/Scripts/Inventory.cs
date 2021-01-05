@@ -1,9 +1,10 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+
     private List<Item> itemList;
 
     public GameObject itemSlotContainer;
@@ -11,6 +12,7 @@ public class Inventory : MonoBehaviour
     public float itemSlotCellSizeY = 1.41f;
     public Vector2 originalPositionFirstSlot;
 
+   
     private int slotX = 0;
     private int slotY = 0;
 
@@ -41,6 +43,12 @@ public class Inventory : MonoBehaviour
     {
         itemList.Add(item);
         SetInventoryItem(item);
+    }
+
+    public void pickUp( Item item)
+    {
+        addItem(item);
+       
     }
 
     public void Activate()
@@ -78,5 +86,6 @@ public class Inventory : MonoBehaviour
             slotY++;
         }
     }
-
+    
 }
+*/
