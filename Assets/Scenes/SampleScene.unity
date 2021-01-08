@@ -869,10 +869,10 @@ RectTransform:
   m_Father: {fileID: 727812539}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 450}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.00289917}
+  m_SizeDelta: {x: 0, y: 50.2013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685928065
 MonoBehaviour:
@@ -2044,8 +2044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686fe36dffda86040a9d93927a3546db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionType: 2
-  descriptionText: "I\xB4m a Gear"
+  interactionType: 0
+  descriptionText: 
 --- !u!1 &1567839341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2930,10 +2930,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I\xB4m a Gear"
+  m_text: I'M A GEAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cc3d2e7dd03ed040b7bc855bda5aecb, type: 2}
+  m_sharedMaterial: {fileID: 9206609272822217196, guid: 7cc3d2e7dd03ed040b7bc855bda5aecb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
