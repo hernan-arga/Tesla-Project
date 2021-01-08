@@ -1,30 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractionSystem : MonoBehaviour
 {
-
+    [Header("Detection Parameters")]
     public Transform detectionPoint;
     private const float detectionRadius = 0.2f;
     public LayerMask detectionLayer;
     public GameObject detectedObject;
 
+    [Header("Examine Parameters")]
+
+    public GameObject examineWindow;
+    public Image examineImage;
+    public TextMeshProUGUI examineText;
+    public bool isExamining = false;
+
+    [Header("Others")]
+
     public List<GameObject> pickedItems = new List<GameObject>();
 
-    
-    
+
+
     void Update()
     {
-        if(DetectObject())
+        if (DetectObject())
         {
-            if(InteractInput())
+            if (InteractInput())
             {
                 detectedObject.GetComponent<Item>().Interact();
 
             }
         }
-        
+
     }
 
     bool InteractInput()
@@ -34,9 +45,9 @@ public class InteractionSystem : MonoBehaviour
 
     bool DetectObject()
     {
-        Collider2D obj = Physics2D.OverlapCircle(detectionPoint.position,detectionRadius,detectionLayer);
-        
-        if(obj==null)
+        Collider2D obj = Physics2D.OverlapCircle(detectionPoint.position, detectionRadius, detectionLayer);
+
+        if (obj == null)
         {
             detectedObject = null;
             return false;
@@ -54,5 +65,25 @@ public class InteractionSystem : MonoBehaviour
         pickedItems.Add(item);
 
     }
-}
 
+    public void ExamineItem(Item item)
+    {
+        if (isExamining)
+        {
+            Debug.Log("Close");
+            examineWindow.SetActive(false);
+            isExamining = false;
+        }
+        else
+        {
+            Debug.Log("Examine");
+            examineImage.sprite = item.GetComponent<SpriteRenderer>().sprite;
+            examineText.text = item.descriptionText;
+            examineWindow.SetActive(true);
+            isExamining = true;
+        }
+
+    }
+
+
+}

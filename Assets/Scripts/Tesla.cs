@@ -11,7 +11,7 @@ public class Tesla : MonoBehaviour
     public bool active = true;
     private bool estaCaminando = false;
     //public Inventory inventory;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,31 +21,34 @@ public class Tesla : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (active)
+        if (!CanMove())
         {
-            move = Input.GetAxisRaw("Horizontal");
+            return;
+        }
 
-            if (Input.GetKey(KeyCode.D))
-            {
-                estaCaminando = true;
-                transform.localScale = new Vector3(move, 1f, 1f);
+        move = Input.GetAxisRaw("Horizontal");
 
-            }
-            else if(Input.GetKey(KeyCode.A))
-            {
-                estaCaminando = true;
-                transform.localScale = new Vector3(move, 1f, 1f);
-            }
-            
-            rigidBody.velocity = new Vector3(speed * move, rigidBody.velocity.y, rigidBody.velocity.z);
-
-            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-            {
-                rigidBody.velocity = new Vector3(0f, 0f, 0f);
-            }
+        if (Input.GetKey(KeyCode.D))
+        {
+            estaCaminando = true;
+            transform.localScale = new Vector3(move, 1f, 1f);
 
         }
-        
+        else if (Input.GetKey(KeyCode.A))
+        {
+            estaCaminando = true;
+            transform.localScale = new Vector3(move, 1f, 1f);
+        }
+
+        rigidBody.velocity = new Vector3(speed * move, rigidBody.velocity.y, rigidBody.velocity.z);
+
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            rigidBody.velocity = new Vector3(0f, 0f, 0f);
+        }
+
+
+
 
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || !active)
         {
@@ -55,13 +58,23 @@ public class Tesla : MonoBehaviour
 
     }
 
+    public bool CanMove()
+    {
+        bool can = true;
+        if (FindObjectOfType<InteractionSystem>().isExamining)
+        {
+            can = false;
+        }
+        return can;
+    }
+
     private void Update()
     {
-      /*  if (Input.GetKeyUp(KeyCode.I))
-        {
-            ControlarInventario();
-        }
-      */
+        /*  if (Input.GetKeyUp(KeyCode.I))
+          {
+              ControlarInventario();
+          }
+        */
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             estaCaminando = false;
@@ -74,19 +87,19 @@ public class Tesla : MonoBehaviour
     {
         animator.SetBool("estaCaminando", estaCaminando);
     }
-   /* private void ControlarInventario()
-    {        
+    /* private void ControlarInventario()
+     {        
 
-        if (inventory.GetActive())
-        {
-            inventory.Desactivate();
-            active = true;
-        }
+         if (inventory.GetActive())
+         {
+             inventory.Desactivate();
+             active = true;
+         }
 
-        else
-        {
-            inventory.Activate();            
-            active = false;
-        }
-    }*/
+         else
+         {
+             inventory.Activate();            
+             active = false;
+         }
+     }*/
 }

@@ -8,7 +8,11 @@ public class Item : MonoBehaviour
 {
 
     public enum InteractionType { NONE, PickUp, Examine }
-    public InteractionType type;
+    public InteractionType interactionType;
+
+    [Header("Examine")]
+    public string descriptionText;
+
 
     //Interaction Type
 
@@ -22,16 +26,18 @@ public class Item : MonoBehaviour
 
     public void Interact()
     {
-        switch (type)
+        switch (interactionType)
         {
             case InteractionType.PickUp:
 
                 FindObjectOfType<InteractionSystem>().PickUpItem(gameObject);
 
                 gameObject.SetActive(false);
-          
+
                 break;
             case InteractionType.Examine:
+                FindObjectOfType<InteractionSystem>().ExamineItem(this);
+
                 Debug.Log("Examine");
                 break;
             case InteractionType.NONE:
@@ -39,6 +45,7 @@ public class Item : MonoBehaviour
                 break;
         }
     }
+
 
 
 }
