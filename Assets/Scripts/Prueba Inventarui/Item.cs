@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(BoxCollider2D))]
 
@@ -13,8 +14,9 @@ public class Item : MonoBehaviour
     [Header("Examine")]
     public string descriptionText;
 
-
-    //Interaction Type
+    [Header("Custom Event")]
+    public UnityEvent customEvent; // Podemos llegar a usarlo depende
+    
 
 
     private void Reset()
@@ -44,6 +46,9 @@ public class Item : MonoBehaviour
                 Debug.Log("None");
                 break;
         }
+
+        customEvent.Invoke();
+
     }
 
 
