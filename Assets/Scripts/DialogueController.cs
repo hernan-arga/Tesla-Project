@@ -103,9 +103,11 @@ public class DialogueController : MonoBehaviour
 
 	void ParseMessage(messageDialog activeSentence)
 	{
-		for (int i = 0; i < activeSentence.message.Length; i++)
+		var message = Lean.Localization.LeanLocalization.GetTranslationText(activeSentence.translationIndex);
+
+		for (int i = 0; i < message.Length; i++)
 		{
-			CheckTag(activeSentence.message, activeSentence.message[i], i, ref inTag);
+			CheckTag(message, message[i], i, ref inTag);
 
 			if (inTag)
 			{
@@ -114,9 +116,9 @@ public class DialogueController : MonoBehaviour
 
 			else
 			{
-				activeMessage += activeSentence.message[i];
+				activeMessage += message[i];
 
-				if (activeSentence.message[i] == ' ')
+				if (message[i] == ' ')
 				{
 					effectsByChar.Add(i - countOfCharsOfTags, TextEffect.None);
 				}
