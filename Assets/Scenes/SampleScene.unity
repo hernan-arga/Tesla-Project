@@ -429,6 +429,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146540707}
   m_CullTransparentMesh: 1
+--- !u!1 &190724954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190724955}
+  - component: {fileID: 190724956}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/FightWithEdison/Tesla1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &190724955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190724954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &190724956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190724954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: "Hola, este es un texto <w>wavy</w> y este uno\n<s>Shaky</s>. \nAdmira
+      este <c>rainbow effect</c>. \xA1\xA1Increible!!"
+    Object: {fileID: 0}
+  - Language: English
+    Text: "Hello, this is a text <w>wavy</w> and this one \n<s>Shaky</s>. \nLook
+      this <c>rainbow effect</c>. \xA1\xA1Amazing!!"
+    Object: {fileID: 0}
 --- !u!1 &326090490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1685,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127667329}
   m_CullTransparentMesh: 1
+--- !u!1 &1139875340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1139875341}
+  - component: {fileID: 1139875342}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/FightWithEdison/Edison1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1139875341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139875340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139875342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139875340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: Y anda...
+    Object: {fileID: 0}
+  - Language: English
+    Text: And go...
+    Object: {fileID: 0}
 --- !u!1001 &1209495819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1661,16 +1765,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[0].message
-      value: "Hola, este es un texto <w>wavy</w> y este uno <s>Shaky</s>. Admira
-        este <c>rainbow effect</c>. \xA1\xA1Increible!!"
+      value: Chapter1/Dinner/FightWithEdison/Tesla1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].message
+      value: Chapter1/Dinner/FightWithEdison/Edison1
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[2].message
-      value: "\xBFMe ayuda Sr. <s>Edison</s>?"
+      value: Chapter1/Dinner/FightWithEdison/Tesla2
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[3].message
-      value: "<c>\xA1UY DIOS!</c>"
+      value: Chapter1/Dinner/FightWithEdison/Edison2
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[0].Portrait
@@ -1707,6 +1814,22 @@ PrefabInstance:
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Dialogue.SentenceList.Array.data[3].speakerName
       value: Thomas Edison
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Tesla1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Edison1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Tesla2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[3].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Edison2
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_RootOrder
@@ -1762,6 +1885,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+--- !u!1 &1241711345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241711346}
+  - component: {fileID: 1241711347}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/FightWithEdison/Edison2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241711346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241711345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241711347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241711345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: "\r<c>\xA1UY DIOS!</c>"
+    Object: {fileID: 0}
+  - Language: English
+    Text: "\r<c>\xA1MY GOD!</c>"
+    Object: {fileID: 0}
 --- !u!1 &1420678396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2175,19 +2349,99 @@ MonoBehaviour:
   descriptionText: "Uh mira este peque\xF1o detalle"
   customEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 55328869}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
+--- !u!1 &1528223739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528223741}
+  - component: {fileID: 1528223740}
+  m_Layer: 0
+  m_Name: LeanLocalization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1528223740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528223739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultLanguage: Spanish
+  DetectLanguage: 1
+  SaveLanguage: 1
+  languages:
+  - name: Spanish
+    cultures:
+    - es
+    - es-ES
+    - es-MX
+    - es-GT
+    - es-CR
+    - es-PA
+    - es-DO
+    - es-VE
+    - es-CO
+    - es-PE
+    - es-AR
+    - es-EC
+    - es-CL
+    - es-UY
+    - es-PY
+    - es-BO
+    - es-SV
+    - es-SV
+    - es-HN
+    - es-NI
+    - es-PR
+  - name: English
+    cultures:
+    - en
+    - en-GB
+    - en-US
+    - en-AU
+    - en-CA
+    - en-NZ
+    - en-IE
+    - en-ZA
+    - en-JM
+    - en-en029
+    - en-BZ
+    - en-BZ
+    - en-TT
+    - en-ZW
+    - en-PH
+  prefabs: []
+--- !u!4 &1528223741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528223739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 190724955}
+  - {fileID: 1139875341}
+  - {fileID: 2030060652}
+  - {fileID: 1241711346}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567839341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3269,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924304375}
   m_CullTransparentMesh: 1
+--- !u!1 &2030060651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2030060652}
+  - component: {fileID: 2030060653}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/FightWithEdison/Tesla2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2030060652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030060651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2030060653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030060651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: "\xBFMe ayuda Sr. <s>Edison</s>?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: "\xBFCan you help me Mr. <s>Edison</s>?"
+    Object: {fileID: 0}
 --- !u!1 &2070800491
 GameObject:
   m_ObjectHideFlags: 0
