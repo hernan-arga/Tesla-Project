@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class Item : MonoBehaviour
 {
 
-    public enum InteractionType { NONE, PickUp, Examine }
+    public enum InteractionType { NONE, PickUp, Examine, Action }
     public InteractionType interactionType;
 
     [Header("Examine")]
@@ -42,6 +42,10 @@ public class Item : MonoBehaviour
 
                 Debug.Log("Examine");
                 break;
+            case InteractionType.Action:
+                ActionOnInteraction();
+                Debug.Log("Action");
+                break;
             case InteractionType.NONE:
                 Debug.Log("None");
                 break;
@@ -51,6 +55,9 @@ public class Item : MonoBehaviour
 
     }
 
-
+    public virtual void ActionOnInteraction()
+    {
+        Debug.Log("Bruh");
+    }
 
 }
