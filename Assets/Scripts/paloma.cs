@@ -8,15 +8,6 @@ using UnityEngine.Events;
 public class paloma: Item
 {
 
-    public enum InteractionType { NONE, PickUp, Examine }
-    public InteractionType interactionType;
-
-    [Header("Examine")]
-    public string descriptionText;
-
-    [Header("Custom Event")]
-    public UnityEvent customEvent; // Podemos llegar a usarlo depende
-
     /* Declaracion de variables TODO: USARLA CUANDO VUELE
     int direccion;
     float velVuelo = 13f;
@@ -40,21 +31,10 @@ public class paloma: Item
 
     }
 
-    public void Interact()
+    public override void ActionOnInteraction()
     {
-        switch (interactionType)
-        {
-            case InteractionType.Examine:
-                updatePanico();
-                Debug.Log("Examine");
-                break;
-            default:
-                Debug.Log("None");
-                break;
-        }
-
-        customEvent.Invoke();
-
+        Debug.Log("Cotorra moment");
+        updatePanico();
     }
 
     void updatePanico()
