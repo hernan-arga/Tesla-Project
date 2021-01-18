@@ -7,12 +7,15 @@ public class Pipescript : MonoBehaviour
 {
     float[] rotations = { 0, 90, 180, 270 };
     public float[] correctRotation;
+    public float[] rotationsWhereTheWaterPassFromRightOrUp;
     bool isPlaced = false;
+    Animator animator;
 
     PipeManager pipeManager;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         pipeManager = GameObject.Find("PipeManager").GetComponent<PipeManager>();
     }
     void Start()
@@ -45,6 +48,28 @@ public class Pipescript : MonoBehaviour
             isPlaced = !isPlaced;
             pipeManager.WrongMove();
         }
+    }
+
+    bool TheWaterPassFromRightOrUp() {
+        return rotationsWhereTheWaterPassFromRightOrUp.Any(r => Approximately(transform.eulerAngles.z, r));        
+    }
+
+    public void PassWater()
+    {
+        if (TheWaterPassFromRightOrUp())
+        {
+            animator.SetTrigger("Fluid1");
+        }
+        
+        else
+        {
+            animator.SetTrigger("Fluid2");
+        }        
+    }
+
+    public bool IsFilled()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).IsName("Pipe_Fill");
     }
 
     /*

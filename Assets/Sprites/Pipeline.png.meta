@@ -14,6 +14,120 @@ TextureImporter:
   - first:
       213: 2174757837807682744
     second: Pipeline_3
+  - first:
+      213: -4113844693145239277
+    second: Pipeline_4
+  - first:
+      213: 8466745200902057222
+    second: Pipeline_5
+  - first:
+      213: 7019729814493329138
+    second: Pipeline_6
+  - first:
+      213: 8295397589972361018
+    second: Pipeline_7
+  - first:
+      213: -4894689889825290713
+    second: Pipeline_8
+  - first:
+      213: 1306636248575234149
+    second: Pipeline_9
+  - first:
+      213: -7445829509067179520
+    second: Pipeline_10
+  - first:
+      213: -3883595781805942831
+    second: Pipeline_11
+  - first:
+      213: -5596410499887367652
+    second: Pipeline_12
+  - first:
+      213: 8904469515813084023
+    second: Pipeline_13
+  - first:
+      213: 6224197908378846497
+    second: Pipeline_14
+  - first:
+      213: 5383536175658362650
+    second: Pipeline_15
+  - first:
+      213: 8915481695622573954
+    second: Pipeline_16
+  - first:
+      213: 6545077413797386625
+    second: Pipeline_17
+  - first:
+      213: 2452546330461204758
+    second: Pipeline_18
+  - first:
+      213: 1558885386048961441
+    second: Pipeline_19
+  - first:
+      213: -6455713233270118561
+    second: Pipeline_20
+  - first:
+      213: -8679714006002844721
+    second: Pipeline_21
+  - first:
+      213: -1818427691495154371
+    second: Pipeline_22
+  - first:
+      213: 1604800726549474752
+    second: Pipeline_23
+  - first:
+      213: 3459371808592901375
+    second: Pipeline_24
+  - first:
+      213: 560554026287763568
+    second: Pipeline_25
+  - first:
+      213: -6106790234443725562
+    second: Pipeline_26
+  - first:
+      213: 9002208682898085230
+    second: Pipeline_27
+  - first:
+      213: -3583197856010652938
+    second: Pipeline_28
+  - first:
+      213: 5742561268565772528
+    second: Pipeline_29
+  - first:
+      213: -4293881060687225867
+    second: Pipeline_30
+  - first:
+      213: 3876654298648919260
+    second: Pipeline_31
+  - first:
+      213: -5792485145429808973
+    second: Pipeline_32
+  - first:
+      213: 4567528306892321669
+    second: Pipeline_33
+  - first:
+      213: 1807854641980402453
+    second: Pipeline_34
+  - first:
+      213: -1868161310137939009
+    second: Pipeline_35
+  - first:
+      213: -7760631046464458817
+    second: Pipeline_36
+  - first:
+      213: -3787261340720762052
+    second: Pipeline_37
+  - first:
+      213: -3673082305112899251
+    second: Pipeline_38
+  - first:
+      213: 7190464671137369830
+    second: Pipeline_39
+  - first:
+      213: -2738513130222467429
+    second: Pipeline_40
+  - first:
+      213: 1997002602950642003
+    second: Pipeline_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,8 +220,8 @@ TextureImporter:
       name: Pipeline_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 12
+        x: 14
+        y: 262
         width: 46
         height: 33
       alignment: 0
@@ -127,10 +241,10 @@ TextureImporter:
       name: Pipeline_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 3
-        width: 22
-        height: 45
+        x: 89
+        y: 262
+        width: 46
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,10 +262,10 @@ TextureImporter:
       name: Pipeline_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 2
-        width: 45
-        height: 45
+        x: 164
+        y: 262
+        width: 46
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,9 +283,9 @@ TextureImporter:
       name: Pipeline_3
       rect:
         serializedVersion: 2
-        x: 175
-        y: 8
-        width: 33
+        x: 239
+        y: 262
+        width: 46
         height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,6 +296,804 @@ TextureImporter:
       bones: []
       spriteID: 8b4060b2bba4e2e10800000000000000
       internalID: 2174757837807682744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_4
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 262
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311c3f33c00b8e6c0800000000000000
+      internalID: -4113844693145239277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_5
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 262
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60da287c6ebef7570800000000000000
+      internalID: 8466745200902057222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_6
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 262
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6f71cf2171b6160800000000000000
+      internalID: 7019729814493329138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_7
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f1fec382c2f1370800000000000000
+      internalID: 8295397589972361018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72684477a71921cb0800000000000000
+      internalID: -4894689889825290713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560d9f6ceba122210800000000000000
+      internalID: 1306636248575234149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00afdedd2891ba890800000000000000
+      internalID: -7445829509067179520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7504e6632ba1ac0800000000000000
+      internalID: -3883595781805942831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_12
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a72f82d4e8552b0800000000000000
+      internalID: -5596410499887367652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_13
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 209
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b5553c8d7039b70800000000000000
+      internalID: 8904469515813084023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12586ac350bc06650800000000000000
+      internalID: 6224197908378846497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_15
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17e499e0a926ba40800000000000000
+      internalID: 5383536175658362650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fa41dad572abb70800000000000000
+      internalID: 8915481695622573954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18953d40b39c4da50800000000000000
+      internalID: 6545077413797386625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_18
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611f356b4e1390220800000000000000
+      internalID: 2452546330461204758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_19
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abfef0dff542a510800000000000000
+      internalID: 1558885386048961441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 164
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f576527a403b866a0800000000000000
+      internalID: -6455713233270118561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbb73049167b8780800000000000000
+      internalID: -8679714006002844721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d92b626a5a3c6e0800000000000000
+      internalID: -1818427691495154371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd254912c5654610800000000000000
+      internalID: 1604800726549474752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_24
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff43e25d458220030800000000000000
+      internalID: 3459371808592901375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_25
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0701c4ebaec77c700800000000000000
+      internalID: 560554026287763568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605482e03a2504ba0800000000000000
+      internalID: -6106790234443725562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_27
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 107
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65d312f9154eec70800000000000000
+      internalID: 9002208682898085230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f23b88d88ce54ec0800000000000000
+      internalID: -3583197856010652938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_29
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f887c16c0da1bf40800000000000000
+      internalID: 5742561268565772528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_30
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbd5fddce11964c0800000000000000
+      internalID: -4293881060687225867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_31
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcb5f39b84acc530800000000000000
+      internalID: 3876654298648919260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_32
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8edeb3375fc9fa0800000000000000
+      internalID: -5792485145429808973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_33
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583bbd99bce136f30800000000000000
+      internalID: 4567528306892321669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_34
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 64
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b68cce73ac61910800000000000000
+      internalID: 1807854641980402453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_35
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb8916bf25f216e0800000000000000
+      internalID: -1868161310137939009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_36
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf2e9a4e23bc4490800000000000000
+      internalID: -7760631046464458817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_37
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33f4ca50e1f07bc0800000000000000
+      internalID: -3787261340720762052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_38
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4109f4ba17960dc0800000000000000
+      internalID: -3673082305112899251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee832d8589a9c360800000000000000
+      internalID: 7190464671137369830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_40
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96c85c31d8def9d0800000000000000
+      internalID: -2738513130222467429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipeline_41
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 16
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359476c6947c6bb10800000000000000
+      internalID: 1997002602950642003
       vertices: []
       indices: 
       edges: []

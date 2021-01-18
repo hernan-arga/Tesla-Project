@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 6502151}
   - component: {fileID: 6502153}
   - component: {fileID: 6502152}
+  - component: {fileID: 6502154}
   m_Layer: 0
   m_Name: Pipeline_1
   m_TagString: Untagged
@@ -196,7 +197,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -245,6 +246,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f422ce12f5c71419232d3393ef7cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6502154
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6502149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &99657520
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +277,7 @@ GameObject:
   - component: {fileID: 99657523}
   - component: {fileID: 99657522}
   - component: {fileID: 99657524}
+  - component: {fileID: 99657525}
   m_Layer: 0
   m_Name: Pipeline_3
   m_TagString: Untagged
@@ -292,6 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
+  rotationsWhereTheWaterPassFromRightOrUp: []
 --- !u!212 &99657523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -332,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -369,6 +391,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &99657525
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99657520}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &128082429
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +422,7 @@ GameObject:
   - component: {fileID: 128082432}
   - component: {fileID: 128082431}
   - component: {fileID: 128082433}
+  - component: {fileID: 128082434}
   m_Layer: 0
   m_Name: Pipeline_3 (1)
   m_TagString: Untagged
@@ -416,6 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 180
+  rotationsWhereTheWaterPassFromRightOrUp: []
 --- !u!212 &128082432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -456,7 +499,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -493,6 +536,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &128082434
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128082429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &220448769
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +567,7 @@ GameObject:
   - component: {fileID: 220448772}
   - component: {fileID: 220448771}
   - component: {fileID: 220448773}
+  - component: {fileID: 220448774}
   m_Layer: 0
   m_Name: Pipeline_1
   m_TagString: Untagged
@@ -541,6 +604,8 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  rotationsWhereTheWaterPassFromRightOrUp:
+  - 0
 --- !u!212 &220448772
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +646,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -618,6 +683,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95652175, y: 1.9565217}
   m_EdgeRadius: 0
+--- !u!95 &220448774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220448769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &396642375
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +714,7 @@ GameObject:
   - component: {fileID: 396642378}
   - component: {fileID: 396642377}
   - component: {fileID: 396642379}
+  - component: {fileID: 396642380}
   m_Layer: 0
   m_Name: Pipeline_1 (1)
   m_TagString: Untagged
@@ -666,6 +751,8 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  rotationsWhereTheWaterPassFromRightOrUp:
+  - 0
 --- !u!212 &396642378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -706,7 +793,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -743,6 +830,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95652175, y: 1.9565217}
   m_EdgeRadius: 0
+--- !u!95 &396642380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396642375}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &628846865
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +943,7 @@ GameObject:
   - component: {fileID: 696894493}
   - component: {fileID: 696894492}
   - component: {fileID: 696894494}
+  - component: {fileID: 696894495}
   m_Layer: 0
   m_Name: Pipeline_1 (2)
   m_TagString: Untagged
@@ -873,6 +980,8 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
+  - 90
 --- !u!212 &696894493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -913,7 +1022,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -950,6 +1059,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95652175, y: 1.9565217}
   m_EdgeRadius: 0
+--- !u!95 &696894495
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696894490}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &809428023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1148,7 @@ GameObject:
   - component: {fileID: 813961419}
   - component: {fileID: 813961418}
   - component: {fileID: 813961420}
+  - component: {fileID: 813961421}
   m_Layer: 0
   m_Name: Pipeline_3 (3)
   m_TagString: Untagged
@@ -1054,6 +1183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
+  - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
   - 270
 --- !u!212 &813961419
 SpriteRenderer:
@@ -1095,7 +1226,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 270
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1132,6 +1263,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &813961421
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813961416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &916194737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1294,7 @@ GameObject:
   - component: {fileID: 916194740}
   - component: {fileID: 916194739}
   - component: {fileID: 916194741}
+  - component: {fileID: 916194742}
   m_Layer: 0
   m_Name: Pipeline_1 (3)
   m_TagString: Untagged
@@ -1180,6 +1331,8 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
+  - 90
 --- !u!212 &916194740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,7 +1373,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1257,6 +1410,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95652175, y: 1.9565217}
   m_EdgeRadius: 0
+--- !u!95 &916194742
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916194737}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &939575104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1441,7 @@ GameObject:
   - component: {fileID: 939575107}
   - component: {fileID: 939575106}
   - component: {fileID: 939575108}
+  - component: {fileID: 939575109}
   m_Layer: 0
   m_Name: Pipeline_1 (4)
   m_TagString: Untagged
@@ -1305,6 +1478,8 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
+  - 90
 --- !u!212 &939575107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1345,7 +1520,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 4228417668034650754, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 8295397589972361018, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1382,6 +1557,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95652175, y: 1.9565217}
   m_EdgeRadius: 0
+--- !u!95 &939575109
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939575104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 588a32cda07c54644adfb5152fd622a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1107916603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1588,7 @@ GameObject:
   - component: {fileID: 1107916606}
   - component: {fileID: 1107916605}
   - component: {fileID: 1107916607}
+  - component: {fileID: 1107916608}
   m_Layer: 0
   m_Name: Pipeline_3 (4)
   m_TagString: Untagged
@@ -1429,6 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
+  rotationsWhereTheWaterPassFromRightOrUp: []
 --- !u!212 &1107916606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1469,7 +1665,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1506,6 +1702,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &1107916608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107916603}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1183194041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1733,7 @@ GameObject:
   - component: {fileID: 1183194044}
   - component: {fileID: 1183194043}
   - component: {fileID: 1183194045}
+  - component: {fileID: 1183194046}
   m_Layer: 0
   m_Name: Pipeline_3 (2)
   m_TagString: Untagged
@@ -1552,6 +1768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
+  - 0
+  rotationsWhereTheWaterPassFromRightOrUp:
   - 0
 --- !u!212 &1183194044
 SpriteRenderer:
@@ -1593,7 +1811,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1630,6 +1848,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &1183194046
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183194041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1191479237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1962,7 @@ GameObject:
   - component: {fileID: 1372009378}
   - component: {fileID: 1372009377}
   - component: {fileID: 1372009379}
+  - component: {fileID: 1372009380}
   m_Layer: 0
   m_Name: Pipeline_3 (6)
   m_TagString: Untagged
@@ -1760,6 +1998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
+  rotationsWhereTheWaterPassFromRightOrUp: []
 --- !u!212 &1372009378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1800,7 +2039,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1837,6 +2076,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &1372009380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372009375}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1399907837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +2107,7 @@ GameObject:
   - component: {fileID: 1399907840}
   - component: {fileID: 1399907839}
   - component: {fileID: 1399907841}
+  - component: {fileID: 1399907842}
   m_Layer: 0
   m_Name: Pipeline_3 (7)
   m_TagString: Untagged
@@ -1883,6 +2142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
+  - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
   - 270
 --- !u!212 &1399907840
 SpriteRenderer:
@@ -1924,7 +2185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 270
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1961,6 +2222,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &1399907842
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399907837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1520009840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,6 +2253,7 @@ GameObject:
   - component: {fileID: 1520009843}
   - component: {fileID: 1520009842}
   - component: {fileID: 1520009844}
+  - component: {fileID: 1520009845}
   m_Layer: 0
   m_Name: Pipeline_3 (5)
   m_TagString: Untagged
@@ -2007,6 +2288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
+  - 270
+  rotationsWhereTheWaterPassFromRightOrUp:
   - 270
 --- !u!212 &1520009843
 SpriteRenderer:
@@ -2048,7 +2331,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 270
-  m_Sprite: {fileID: 2174757837807682744, guid: 6513e6a8e62f25043a33339844915360, type: 3}
+  m_Sprite: {fileID: 6224197908378846497, guid: 6513e6a8e62f25043a33339844915360, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2085,6 +2368,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4347826, y: 1.4347826}
   m_EdgeRadius: 0
+--- !u!95 &1520009845
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520009840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b65962a266a5f6d43bf146e4551f9b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1583350427
 GameObject:
   m_ObjectHideFlags: 0

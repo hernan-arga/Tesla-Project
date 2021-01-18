@@ -14,7 +14,7 @@ public class EntryPipe : MonoBehaviour
     {
         if (pipeManager.IsCorrectlyPlaced())
         {
-            Debug.Log("igua unpodfoc ebri oesto");
+            pipeManager.TriggerPipeSuccessful();
         }
 
         else

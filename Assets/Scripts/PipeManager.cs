@@ -9,6 +9,7 @@ public class PipeManager : MonoBehaviour
     public int totalPipes = 0;
     public int correctedPipes = 0;
     AudioSource audioSource;
+    IEnumerator CoroutineFillPipes;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,26 @@ public class PipeManager : MonoBehaviour
             Pipes[i] = PipesHolder.transform.GetChild(i).gameObject;
         }
     }
-    public void TriggerPipeError()
+
+    public void TriggerPipeSuccessful()
+    {
+        CoroutineFillPipes = FillPipes();
+        StartCoroutine(CoroutineFillPipes);
+    }
+
+    IEnumerator FillPipes()
+    {
+        for (int i = 0; i < Pipes.Length; i++)
+        {
+            Pipes[i].GetComponent<Pipescript>().PassWater();
+            while (!Pipes[i].GetComponent<Pipescript>().IsFilled())
+            {
+                yield return null;
+            }            
+        }
+    }
+
+        public void TriggerPipeError()
     {
         audioSource.Play();
     }
