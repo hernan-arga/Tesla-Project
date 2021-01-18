@@ -6,6 +6,7 @@ public class PipeManager : MonoBehaviour
 {
     public GameObject PipesHolder;
     public GameObject[] Pipes;
+    public EntryPipe EntryPipe;
     public int totalPipes = 0;
     public int correctedPipes = 0;
     AudioSource audioSource;
@@ -31,6 +32,8 @@ public class PipeManager : MonoBehaviour
 
     IEnumerator FillPipes()
     {
+        EntryPipe.TriggerPipe();        
+
         for (int i = 0; i < Pipes.Length; i++)
         {
             Pipes[i].GetComponent<Pipescript>().PassWater();
