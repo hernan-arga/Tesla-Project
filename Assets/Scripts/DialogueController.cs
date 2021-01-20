@@ -51,6 +51,7 @@ public class DialogueController : MonoBehaviour
 	void StartDialogueSystem()
 	{
 		Sentences.Clear();
+		DialoguePanel.GetComponent<Animator>().SetBool("estaAbierto", true);
 
 		foreach (messageDialog sentence in Dialogue.SentenceList)
 		{
@@ -66,7 +67,8 @@ public class DialogueController : MonoBehaviour
 		if (Sentences.Count <= 0)
 		{
 			StopTypingText();
-			DialoguePanel.SetActive(false);
+			DialoguePanel.GetComponent<Animator>().SetBool("estaAbierto", false);
+			//DialoguePanel.SetActive(false);
 			Destroy(gameObject);
 			return;
 		}
@@ -103,8 +105,9 @@ public class DialogueController : MonoBehaviour
 
 	void ParseMessage(messageDialog activeSentence)
 	{
+		Debug.Log(activeSentence.translationIndex);
 		var message = Lean.Localization.LeanLocalization.GetTranslationText(activeSentence.translationIndex);
-
+		Debug.Log(message);
 		for (int i = 0; i < message.Length; i++)
 		{
 			CheckTag(message, message[i], i, ref inTag);
