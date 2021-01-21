@@ -765,6 +765,7 @@ MonoBehaviour:
   examineImage: {fileID: 1127667331}
   examineText: {fileID: 2070800493}
   isExamining: 0
+  inventory: {fileID: 554851703}
   pickedItems: []
 --- !u!1 &495771154
 GameObject:
@@ -2648,7 +2649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686fe36dffda86040a9d93927a3546db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionType: 2
+  interactionType: 1
   descriptionText: "Uh mira este peque\xF1o detalle"
   customEvent:
     m_PersistentCalls:
@@ -3728,7 +3729,7 @@ PrefabInstance:
     - target: {fileID: 6286209209190125764, guid: 43c5a856214e69a49a8ab2bc94fa14c1, type: 3}
       propertyPath: prefab1
       value: 
-      objectReference: {fileID: 9200551997414278160, guid: cabcefe37cdd92246858a7aa29304746, type: 3}
+      objectReference: {fileID: 55328872}
     - target: {fileID: 6286209209190125764, guid: 43c5a856214e69a49a8ab2bc94fa14c1, type: 3}
       propertyPath: itemSlotContainer
       value: 
