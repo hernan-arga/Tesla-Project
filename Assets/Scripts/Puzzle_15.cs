@@ -7,6 +7,7 @@ public class Puzzle_15 : MonoBehaviour
     public NumberBox boxPrefab;
     public NumberBox[,] boxes = new NumberBox[4, 4];
     public Sprite[] sprites;
+    private Vector2 lastMove;
     void Start()
     {
         Init();
@@ -33,11 +34,52 @@ public class Puzzle_15 : MonoBehaviour
         }
     }
 
+    bool IsPuzzleSolved()
+    {
+        int n = 0;
+        for (int y = 3; y >= 0; y--)
+        {
+            for (int x = 0; x < 4; x++)
+            {                
+                if(boxes[x, y].index != n + 1)
+                {
+                    return false;
+                }
+
+                n++;
+
+            }
+        }
+
+        return true;
+    }
+
     void ClickToSwap(int x, int y)
     {
         int dx = getDx(x, y);
         int dy = getDy(x, y);
         Swap(x, y, dx, dy);
+
+        if (IsPuzzleSolved())
+        {
+            Debug.Log("Puzzle resuelto");
+            BlockBoxes();
+        }
+    }
+
+    void BlockBoxes()
+    {
+        int n = 0;
+        for (int y = 3; y >= 0; y--)
+        {
+            for (int x = 0; x < 4; x++)
+            {
+                boxes[x, y].isBlocked = true;
+
+                n++;
+
+            }
+        }
     }
 
     void Swap(int x, int y, int dx, int dy) {        
@@ -93,9 +135,7 @@ public class Puzzle_15 : MonoBehaviour
                 }
             }
         }
-    }
-
-    private Vector2 lastMove;
+    }    
 
     Vector2 getValidMove(int x, int y)
     {
@@ -118,7 +158,7 @@ public class Puzzle_15 : MonoBehaviour
                     pos = Vector2.down;
                     break;
             }
-        } while (!(isValidRange(x + (int)pos.x) && isValidRange(y + (int)pos.y) || isRepeatMove(pos)));
+        } while (!(isValidRange(x + (int)pos.x) && isValidRange(y + (int)pos.y)) || isRepeatMove(pos));
 
         lastMove = pos;
         return pos;

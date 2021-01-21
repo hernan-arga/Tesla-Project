@@ -9,6 +9,7 @@ public class NumberBox : MonoBehaviour
     int x = 0;
     int y = 0;
     private Action<int, int> swapFunc = null;
+    public bool isBlocked = false;
 
     public void Init(int i, int j, int index, Sprite sprite, Action<int, int> swapFunc)
     {
@@ -49,7 +50,7 @@ public class NumberBox : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0) && swapFunc!=null)
+        if (Input.GetMouseButtonDown(0) && swapFunc!=null && !isBlocked)
         {
             swapFunc(x, y);
         }
