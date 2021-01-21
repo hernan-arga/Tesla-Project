@@ -6,18 +6,18 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    Image image;
+    Image slotImage;
 
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<Image>();
+        slotImage = GetComponent<Image>();
         
     }
 
     // Update is called once per frame
     void SetImage(Image image)
     {
-        image = image;
+        slotImage = image;
     }
 }
