@@ -32,7 +32,7 @@ public class Item : MonoBehaviour
         {
             case InteractionType.PickUp:
 
-                FindObjectOfType<InteractionSystem>().PickUpItem(gameObject);
+                FindObjectOfType<InteractionSystem>().PickUpItem(this);
 
                 gameObject.SetActive(false);
 

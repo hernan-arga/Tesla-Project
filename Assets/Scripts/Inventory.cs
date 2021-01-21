@@ -16,21 +16,10 @@ public class Inventory : MonoBehaviour
     private int slotX = 0;
     private int slotY = 0;
 
-    public Item prefab1;
-
     // Start is called before the first frame update
     void Start()
     {
         originalPositionFirstSlot = new Vector2(-4.15f, 3.07f);
-        itemList = new List<Item>();
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
     }
 
     // Update is called once per frame
@@ -41,6 +30,9 @@ public class Inventory : MonoBehaviour
 
     public void addItem(Item item)
     {
+        if (itemList == null) {
+            itemList = new List<Item>();
+        }
         itemList.Add(item);
         SetInventoryItem(item);
     }
@@ -79,6 +71,11 @@ public class Inventory : MonoBehaviour
         itemSlotRectTransform.anchoredPosition = new Vector2(
                 originalPositionFirstSlot.x + slotX * itemSlotCellSizeX,
                 originalPositionFirstSlot.y - slotY * itemSlotCellSizeY);
+        GameObject itemImage = itemSlotContainer.transform.Find("ItemSlotImage").gameObject;
+        if (itemImage != null)
+        {
+            itemImage.GetComponent<SpriteRenderer>().sprite = item.GetComponent<SpriteRenderer>().sprite;
+        }
         slotX++;
         if (slotX >= 3)
         {
