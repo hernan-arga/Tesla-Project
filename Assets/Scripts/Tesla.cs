@@ -10,7 +10,7 @@ public class Tesla : MonoBehaviour
     public float speed = 8f;
     public bool active = true;
     private bool estaCaminando = false;
-    //public Inventory inventory;
+    public Inventory inventory;
 
     // Start is called before the first frame update
     void Start()
@@ -70,11 +70,10 @@ public class Tesla : MonoBehaviour
 
     private void Update()
     {
-        /*  if (Input.GetKeyUp(KeyCode.I))
-          {
+        if (Input.GetKeyUp(KeyCode.I))
+        {
               ControlarInventario();
-          }
-        */
+        }
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             estaCaminando = false;
@@ -87,7 +86,7 @@ public class Tesla : MonoBehaviour
     {
         animator.SetBool("estaCaminando", estaCaminando);
     }
-    /* private void ControlarInventario()
+    private void ControlarInventario()
      {        
 
          if (inventory.GetActive())
@@ -101,5 +100,5 @@ public class Tesla : MonoBehaviour
              inventory.Activate();            
              active = false;
          }
-     }*/
+     }
 }
