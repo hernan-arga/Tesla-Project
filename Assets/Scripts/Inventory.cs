@@ -8,8 +8,8 @@ public class Inventory : MonoBehaviour
     private List<Item> itemList;
 
     public GameObject itemSlotContainer;
-    public float itemSlotCellSizeX = 1.37f;
-    public float itemSlotCellSizeY = 1.41f;
+    public float itemSlotCellSizeX;
+    public float itemSlotCellSizeY;
     public Vector2 originalPositionFirstSlot;
 
    
@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        originalPositionFirstSlot = new Vector2(-4.15f, 3.07f);
+        //originalPositionFirstSlot = new Vector2(-4.15f, 3.07f);
     }
 
     // Update is called once per frame
@@ -71,10 +71,10 @@ public class Inventory : MonoBehaviour
         itemSlotRectTransform.anchoredPosition = new Vector2(
                 originalPositionFirstSlot.x + slotX * itemSlotCellSizeX,
                 originalPositionFirstSlot.y - slotY * itemSlotCellSizeY);
-        GameObject itemImage = itemSlotContainer.transform.Find("ItemSlotImage").gameObject;
+        GameObject itemImage = itemSlotRectTransform.transform.Find("SlotIcon").gameObject;
         if (itemImage != null)
         {
-            itemImage.GetComponent<SpriteRenderer>().sprite = item.GetComponent<SpriteRenderer>().sprite;
+            itemImage.GetComponent<UnityEngine.UI.Image>().sprite = item.GetComponent<SpriteRenderer>().sprite;
         }
         slotX++;
         if (slotX >= 3)
