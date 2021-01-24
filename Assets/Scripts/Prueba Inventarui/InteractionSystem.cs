@@ -21,6 +21,7 @@ public class InteractionSystem : MonoBehaviour
 
     [Header("Others")]
 
+    public Inventory inventory;
     public List<GameObject> pickedItems = new List<GameObject>();
 
 
@@ -60,10 +61,16 @@ public class InteractionSystem : MonoBehaviour
         }
     }
 
-    public void PickUpItem(GameObject item)
+    public void PickUpItem(Item item)
     {
-        pickedItems.Add(item);
+        Debug.Log("El inventario es:");
+        Debug.Log(GetComponent<Inventory>());
+        Debug.Log("El Item es:");
+        Debug.Log(item);
+        Debug.Log(GetComponent<Item>());
+        Debug.Log(item.GetComponent<Item>());
 
+        inventory.GetComponent<Inventory>().pickUp(item.GetComponent<Item>());
     }
 
     public void ExamineItem(Item item)

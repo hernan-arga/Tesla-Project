@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,29 +8,18 @@ public class Inventory : MonoBehaviour
     private List<Item> itemList;
 
     public GameObject itemSlotContainer;
-    public float itemSlotCellSizeX = 1.37f;
-    public float itemSlotCellSizeY = 1.41f;
+    public float itemSlotCellSizeX;
+    public float itemSlotCellSizeY;
     public Vector2 originalPositionFirstSlot;
 
    
     private int slotX = 0;
     private int slotY = 0;
 
-    public Item prefab1;
-
     // Start is called before the first frame update
     void Start()
     {
-        originalPositionFirstSlot = new Vector2(-4.15f, 3.07f);
-        itemList = new List<Item>();
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
-        addItem(prefab1);
+        //originalPositionFirstSlot = new Vector2(-4.15f, 3.07f);
     }
 
     // Update is called once per frame
@@ -41,6 +30,9 @@ public class Inventory : MonoBehaviour
 
     public void addItem(Item item)
     {
+        if (itemList == null) {
+            itemList = new List<Item>();
+        }
         itemList.Add(item);
         SetInventoryItem(item);
     }
@@ -79,6 +71,11 @@ public class Inventory : MonoBehaviour
         itemSlotRectTransform.anchoredPosition = new Vector2(
                 originalPositionFirstSlot.x + slotX * itemSlotCellSizeX,
                 originalPositionFirstSlot.y - slotY * itemSlotCellSizeY);
+        GameObject itemImage = itemSlotRectTransform.transform.Find("SlotIcon").gameObject;
+        if (itemImage != null)
+        {
+            itemImage.GetComponent<UnityEngine.UI.Image>().sprite = item.GetComponent<SpriteRenderer>().sprite;
+        }
         slotX++;
         if (slotX >= 3)
         {
@@ -88,4 +85,3 @@ public class Inventory : MonoBehaviour
     }
     
 }
-*/
