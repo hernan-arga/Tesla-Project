@@ -13,6 +13,7 @@ public class DialogueController : MonoBehaviour
 	public TextMeshProUGUI DisplayText;
 	public TextMeshProUGUI SpeakerName;
 	public Image Portrait;
+    public bool StartOnWake;
 	messageDialog ActiveSentence;
 	AudioSource MyAudio;
 	//public GameController GameController;
@@ -41,15 +42,22 @@ public class DialogueController : MonoBehaviour
 		Sentences = new Queue<messageDialog>();
 		MyAudio = GetComponent<AudioSource>();
 		effectsByChar = new Dictionary<int, TextEffect>();
+		if (StartOnWake) {
+            InitDialogueSystem();
+        }
+	}
+
+	public void InitDialogueSystem() {
 		StartDialogueSystem();
 
 		DialoguePanel.SetActive(true);
 		DisplayNextSentence();
-		
-	}
-
+    }
+	
 	void StartDialogueSystem()
 	{
+        Debug.Log("Lista de Sentences:");
+        Debug.Log(Sentences.Count);
 		Sentences.Clear();
 		DialoguePanel.GetComponent<Animator>().SetBool("estaAbierto", true);
 
@@ -57,6 +65,8 @@ public class DialogueController : MonoBehaviour
 		{
 			Sentences.Enqueue(sentence);
 		}
+        Debug.Log("Nueva lista de Sentences:");
+        Debug.Log(Sentences.Count);
 
 	}
 
@@ -105,9 +115,9 @@ public class DialogueController : MonoBehaviour
 
 	void ParseMessage(messageDialog activeSentence)
 	{
-		Debug.Log(activeSentence.translationIndex);
+		//Debug.Log(activeSentence.translationIndex);
 		var message = Lean.Localization.LeanLocalization.GetTranslationText(activeSentence.translationIndex);
-		Debug.Log(message);
+		//Debug.Log(message);
 		for (int i = 0; i < message.Length; i++)
 		{
 			CheckTag(message, message[i], i, ref inTag);
