@@ -6,6 +6,7 @@ public struct messageDialog
 {
 	[TextArea(1, 2)]
 	public string speakerName;
+    public bool isADialogue;
 	[TextArea(3, 10)]
 	public string translationIndex;
 	public AudioClip SpeakSound;

@@ -1646,6 +1646,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &800272527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800272528}
+  m_Layer: 5
+  m_Name: Dialogos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &800272528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800272527}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1209495820}
+  - {fileID: 2033847716}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913086344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2175,12 +2207,63 @@ RectTransform:
   m_AnchoredPosition: {x: -51.87, y: 24.74}
   m_SizeDelta: {x: 13, y: 14.89}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1193938490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193938491}
+  - component: {fileID: 1193938492}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/Misc/Farola3 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193938491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193938490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1193938492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193938490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: Hmmm, una farola
+    Object: {fileID: 0}
+  - Language: English
+    Text: Hmmm, a streetlight
+    Object: {fileID: 0}
 --- !u!1001 &1209495819
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 800272528}
     m_Modifications:
     - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: Portrait
@@ -2272,7 +2355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2292,15 +2375,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2324,6 +2407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+--- !u!4 &1209495820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+  m_PrefabInstance: {fileID: 1209495819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1241711345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2462,57 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: "\r<c>\xA1MY GOD!</c>"
+    Object: {fileID: 0}
+--- !u!1 &1374986693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374986694}
+  - component: {fileID: 1374986695}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/Misc/Farola2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374986694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374986693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374986695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374986693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: Hmmm, una farola
+    Object: {fileID: 0}
+  - Language: English
+    Text: Hmmm, a streetlight
     Object: {fileID: 0}
 --- !u!1 &1420678396
 GameObject:
@@ -2878,9 +3017,64 @@ Transform:
   - {fileID: 1139875341}
   - {fileID: 2030060652}
   - {fileID: 1241711346}
+  - {fileID: 1653622152}
+  - {fileID: 1374986694}
+  - {fileID: 1535937310}
+  - {fileID: 1193938491}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1535937309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535937310}
+  - component: {fileID: 1535937311}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/Misc/Farola3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535937310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535937309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1535937311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535937309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: Hmmm, una farola
+    Object: {fileID: 0}
+  - Language: English
+    Text: Hmmm, a streetlight
+    Object: {fileID: 0}
 --- !u!1 &1556763921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,6 +3456,57 @@ RectTransform:
   m_AnchoredPosition: {x: 3.81, y: 2.51}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.51714563, y: 0.48499757}
+--- !u!1 &1653622151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653622152}
+  - component: {fileID: 1653622153}
+  m_Layer: 0
+  m_Name: Chapter1/Dinner/Misc/Farola1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653622152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653622151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1528223741}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653622153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653622151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: Hmmm, una farola
+    Object: {fileID: 0}
+  - Language: English
+    Text: Hmmm, a streetlight
+    Object: {fileID: 0}
 --- !u!1 &1705636001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3985,160 @@ MonoBehaviour:
   - Language: English
     Text: "\xBFCan you help me Mr. <s>Edison</s>?"
     Object: {fileID: 0}
+--- !u!1001 &2033847715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 800272528}
+    m_Modifications:
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Portrait
+      value: 
+      objectReference: {fileID: 1175209368}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: DisplayText
+      value: 
+      objectReference: {fileID: 644979323}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: SpeakerName
+      value: 
+      objectReference: {fileID: 314914738}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: DialoguePanel
+      value: 
+      objectReference: {fileID: 569960512}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: shaky_maxHeight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].message
+      value: Chapter1/Dinner/FightWithEdison/Tesla1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].message
+      value: Chapter1/Dinner/FightWithEdison/Edison1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].message
+      value: Chapter1/Dinner/FightWithEdison/Tesla2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[3].message
+      value: Chapter1/Dinner/FightWithEdison/Edison2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].Portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: a82d6a3f2386eb449886562d5371596d, type: 3}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].Portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dd74027e599f5b44bfd0b28a735598e, type: 3}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].Portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: a82d6a3f2386eb449886562d5371596d, type: 3}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[3].Portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dd74027e599f5b44bfd0b28a735598e, type: 3}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].TypingSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].speakerName
+      value: Nikola Tesla
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].speakerName
+      value: Thomas Edison
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].speakerName
+      value: Nikola Tesla
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[3].speakerName
+      value: Thomas Edison
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[0].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Tesla1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[1].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Edison1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[2].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Tesla2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996693, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: Dialogue.SentenceList.Array.data[3].translationIndex
+      value: Chapter1/Dinner/FightWithEdison/Edison2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996695, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_Name
+      value: Dialogo de la farola
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688927990367996695, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+--- !u!4 &2033847716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6688927990367996694, guid: 1fe3c7f19a47ebd4fa7ab677335f50ac, type: 3}
+  m_PrefabInstance: {fileID: 2033847715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2070800491
 GameObject:
   m_ObjectHideFlags: 0

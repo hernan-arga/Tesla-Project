@@ -78,6 +78,7 @@ public class DialogueController : MonoBehaviour
 		StopTypingText();
 		SpeakerName.text = ActiveSentence.speakerName;
 		Portrait.sprite = ActiveSentence.Portrait;
+		UpdateDialogueViews(ActiveSentence.isADialogue);
 		ParseMessage(ActiveSentence);
 		countOfCharsOfTags = 0;
 		CoroutineTypeText = TypeTheSentence(ActiveSentence);
@@ -273,5 +274,12 @@ public class DialogueController : MonoBehaviour
 	Vector2 Shaky(float time)
 	{
 		return new Vector2(0, Mathf.Cos(time * shaky_velocity) * shaky_maxHeight);
+	}
+
+    void UpdateDialogueViews(bool dialogMode) {
+		if (DialoguePanel != null) {
+			DialoguePanel.transform.Find("Picture Panel").gameObject.SetActive(dialogMode);
+			DialoguePanel.transform.Find("Speaker Name Panel").gameObject.SetActive(dialogMode);
+		}
 	}
 }
